@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Indian Constitution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register-page">
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <p>Fundamental Freedom</p>
+            </div>
+            <nav>
+                <ul class="nav-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="amendments.html">Amendments</a></li>
+                    <li><a href="provisions.html">Constitutional Provisions</a></li>
+                    <li><a href="rules.html">Rules and Regulations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Register</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+            <button type="button" id="registerBtn">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indian Constitution Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('registerBtn').onclick = function() {
+            window.location.href = 'login.html';  // Redirect to login page after registration
+        };
+    </script>
+</body>
+</html>

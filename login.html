@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Indian Constitution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <header>
+        <div class="nav-container">
+            <div class="nav-left">
+                <p>Fundamental Freedom</p>
+            </div>
+            <nav>
+                <ul class="nav-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="amendments.html">Amendments</a></li>
+                    <li><a href="provisions.html">Constitutional Provisions</a></li>
+                    <li><a href="rules.html">Rules and Regulations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="button" id="loginBtn">Login</button>
+            <p>Not registered? <a href="register.html">Register Here</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indian Constitution Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('loginBtn').onclick = function() {
+            window.location.href = 'index.html';  // Redirect to Home page after successful login
+        };
+    </script>
+</body>
+</html>
